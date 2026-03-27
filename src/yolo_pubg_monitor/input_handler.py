@@ -10,7 +10,7 @@ def start_listening(on_tab_callback):
 
     keyboard.add_hotkey("tab",on_tab_callback)
 
-    keyboard.wait('esc')
+    keyboard.wait('f12')
     print('script stopped')
 
 if __name__ == "__main__":

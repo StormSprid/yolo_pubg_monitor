@@ -1,3 +1,5 @@
+import time
+
 import mss
 import os
 from datetime import datetime
@@ -17,5 +19,6 @@ def take_screenshot(sub_dir="dataset/raw_screens"):
     with mss.mss() as sct:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
         filename = os.path.join(save_path, f"screen_{timestamp}.png")
+        time.sleep(0.1)
         sct.shot(output=filename)
         return filename
