@@ -1,0 +1,20 @@
+[project]
+name = "yolo-pubg-monitor"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "StormSprid",email = "emil333.mem@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "keyboard (>=0.13.5,<0.14.0)",
+    "mss (>=10.1.0,<11.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "yolo_pubg_monitor", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
