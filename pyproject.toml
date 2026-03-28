@@ -9,7 +9,8 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "keyboard (>=0.13.5,<0.14.0)",
-    "mss (>=10.1.0,<11.0.0)"
+    "mss (>=10.1.0,<11.0.0)",
+    "opencv-python (>=4.13.0.92,<5.0.0.0)"
 ]
 
 [tool.poetry]
@@ -21,3 +22,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 run-core = "yolo_pubg_monitor.core:main"
+prepare = "yolo_pubg_monitor.dataset_preparation.frame_extractor:main"
